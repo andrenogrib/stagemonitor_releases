@@ -62,18 +62,28 @@ Website, full guide and screenshots: **[stagemonitor.stagerig.com.br](https://st
 
 ### Application
 
-- [Electron](https://www.electronjs.org/) — cross-platform desktop shell
-- [React](https://react.dev/) — UI
-- [TypeScript](https://www.typescriptlang.org/) — language
-- [electron-builder](https://www.electron.build/) — packaging (NSIS for Windows,
-  DMG for macOS)
-- **NDI** for video output, **MJPEG over HTTP** for the LAN web-viewer
-- Live control via **MIDI**, **OSC**, **Art-Net**, **sACN** and **SMPTE timecode (LTC/MTC)**
+- [Electron](https://www.electronjs.org/) **42** — cross-platform desktop shell with multiple
+  windows (editor, screen outputs, config, control, test patterns, web-viewer, timecode)
+- [React](https://react.dev/) **19** + [TypeScript](https://www.typescriptlang.org/) **6** — UI
+- [electron-vite](https://electron-vite.org/) **5** + [Vite](https://vitejs.dev/) **7** — build & bundling
+- [Zustand](https://zustand-demo.pmnd.rs/) — state management (with undo)
+- [Konva](https://konvajs.org/) + [react-konva](https://konvajs.org/docs/react/) — the WYSIWYG canvas
+- [koffi](https://koffi.dev/) (FFI) → **NDI 6** runtime — native video + audio NDI output
+- [@julusian/midi](https://github.com/Julusian/node-midi) — MIDI I/O
+- Pure `node:dgram` (UDP) — **OSC**, **Art-Net** and **sACN** implemented from scratch (no libs)
+- **Web Audio API** — LTC generation; **LTC/MTC** for SMPTE timecode in/out
+- `node:http` + **MJPEG** — the LAN web-viewer server
+- [electron-builder](https://www.electron.build/) **25** — packaging: NSIS installer (Windows),
+  DMG + ZIP (macOS), AppImage (Linux); native addons shipped unpacked from the asar
 
 ### Website ([stagemonitor.stagerig.com.br](https://stagemonitor.stagerig.com.br))
 
-- [Astro](https://astro.build/) — static site
-- [Tailwind CSS](https://tailwindcss.com/) — styling
+- [Astro](https://astro.build/) **6** — static site generator
+- [Tailwind CSS](https://tailwindcss.com/) **4** — styling (via the `@tailwindcss/vite` plugin)
+- [`@astrojs/mdx`](https://docs.astro.build/en/guides/integrations-guide/mdx/) — MDX content (the guide pages)
+  and [`@astrojs/sitemap`](https://docs.astro.build/en/guides/integrations-guide/sitemap/) — sitemap
+- **TypeScript**, Node **22+**; a prebuild step pulls the latest GitHub release before each build
+- Deployed to **Cloudflare Workers** (static assets) via [Wrangler](https://developers.cloudflare.com/workers/wrangler/)
 
 ---
 
