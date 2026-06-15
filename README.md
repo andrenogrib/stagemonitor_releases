@@ -7,8 +7,8 @@ A cross-platform (Windows + macOS) **ProPresenter-style stage display** with a
 screens and NDI outputs, and fire them live from MIDI, OSC, Art-Net, sACN or
 SMPTE timecode — then mirror any screen to a browser on the LAN.
 
-[![Latest release](https://img.shields.io/github/v/release/andrenogrib/studiomonitor_releases?label=latest&color=3b82f6)](../../releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/andrenogrib/studiomonitor_releases/total?color=22c55e)](../../releases)
+[![Latest release](https://badgen.net/github/tag/andrenogrib/studiomonitor_releases?label=latest&color=blue)](../../releases/latest)
+[![Downloads](https://badgen.net/github/assets-dl/andrenogrib/studiomonitor_releases?label=downloads&color=green)](../../releases)
 [![Platforms](https://img.shields.io/badge/platform-Windows%20%7C%20macOS-0b0d11)](#download)
 [![Website](https://img.shields.io/badge/website-stagemonitor.stagerig.com.br-3b82f6)](https://stagemonitor.stagerig.com.br)
 
